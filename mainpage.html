@@ -1,70 +1,92 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
- <title></title>
- <meta charset= "utf-8">
-        <style>
-           
-      #mainblock {
-          position: fixed;
-          left: 15px;
-          bottom: 0;
-          width: 400px;
-          overflow: auto;
-          top: 57px;
-          border: 2px solid black; /* Параметры рамки */
-          margin-bottom: 700px;
-              }
+	<title></title>
+	<style>
+		#mainblock
+		{
+			width: 600px;
+			border-width: 0;
+			margin-top: 10px;
+			margin-left: 10px;
+		}
 
-      #image {
-          position: relative;
+		#name_and_photo
+		{
+			height: 75px;
+		}
 
-           }
+		#photo
+		{
+			display: inline-block;
+			width: 75px;
+			height: 75px;
+			margin: 0;
+		}
 
-      #name {
-          position: relative;
-          margin-left: 70px;
-          margin-top: -70px;
-           }
-        
-        p {
-          font-family: Georgia, 'Times New Roman', Times, serif;
-          }
+		#name_and_time
+		{
+			display: inline-block;
+			width: calc(100% - 79px);
+			vertical-align: top;
+		}
 
-      #text {
-          margin-left: 70px;
-          margin-top: 0px;
-        }
+		#name
+		{
+			display: inline-block;
+			width: 100%;
+			font-size: 40px;
+		}
 
-      #timePublishing {
-           margin-top: 77px;
-           width:130px;
-           height: 35px;
-      }
+		#time
+		{
+			display: inline-block;
+			font-size: 15px;
+		}
 
-      #uploadtime {
-           margin-top: -51px;
-           margin-left: 125px;
-           width:100px;
-           height: 0px;
-      }
+		#post
+		{
+			position: relative;
+			left: 75px;
+			margin-left: 5px;
+			width: calc(100% - 75px);
+			font-size: 14pt;
+		}
 
+		p
+		{
+			margin: 0;
+			font-family: Helvetica;
+		}
 
-        </style>
+		body
+		{
+			margin: 0;
+		}
+	</style>
 </head>
 <body>
- <div id= "mainblock">
-  
-  <div id = "image"><img width="60" height="60" src="https://image.freepik.com/free-icon/picture_318-67978.png" alt="альтернативный текст"></div>
-  <div id = "name"><p>Rusnak V.R.</p></div>
-  <div id = "text"><p>Здесь будет ваш текст</p></div>
-  <div id="timePublishing">
-  <p>time Publishing |</p>
-  </div>
-  <div id="uploadtime">
-  <p>upload time</p>
-  </div>
-  </div>
+	<div id = "mainblock">
+		<div id = "name_and_photo">
+			<div id = "photo">
+				<img
+					src = "https://image.freepik.com/free-icon/picture_318-67978.png"
+					height="75px"
+					width = "75px"
+				>
+			</div>
 
+			<div id = "name_and_time">
+				<p id = "name">Рулон Обоев</p>
+				<p id = "time">10 минут назад</p>
+			</div>
+		</div>
+
+		<div id = "post">
+			<p>
+				Текст поста
+			</p>
+		</div>
+	</div>
 </body>
 </html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>tweet_main</title>
+   <meta charset="utf-8">
+   <style>
+       #header_main {
+           width: 900px;
+           margin-left: calc((100% - 900px) / 2);
+       }
+       
+       #header {
+           display: flex;      
+       }
+       
+       #tweet_icon {
+           display: inline-block;
+           margin-left: 4%;
+       }
+       
+       .find {
+           border-radius: 30px;
+           border-width: 2px;
+           padding: 10px;
+           border-color: #9CECF0;
+       }
+       
+       #chirik {
+           display: inline-block;   
+       }
+       
+       
+       #findid {
+           margin-left: 5%;
+       }
+
+       #user_data {
+        width: 300px;
+        height: 200px;
+        margin-left: calc((100% - 900px) / 2);
+        border: solid;
+        border-width: 1px;
+        position: relative;
+       }
+
+       #BG_userdata {
+       	width: 300px;
+       	border: solid;
+        border-width: 1px;
+       }
+
+       #user_avatar {
+       	width: 64px;
+       	position: relative;
+       }
+
+       #user_profiles {
+       	margin-top: 10px;
+       	margin-left: 70px;      
+       }
+       
+       p {
+       	font-family: arial;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 400;
+		margin-top: 1px;
+		margin-bottom: 2px; 
+
+       }
+
+       .chirik_following_followers {
+       	padding-left: 15px;
+       	padding-right: 15px;
+       }
+
+       #box_cff {
+       	padding-left: 30px;
+       	padding-top: 0px;
+       }
+
+       .inline_block {
+       	display: inline-block;
+       }
+
+       .amount_color {
+       	color: #0099FF;
+       	font-size: 20px;
+       }
+
+       .font_chirik_following_followers {
+       	font-size: 13px;
+       }
+
+
+       .font_LFname {
+       	font-size: 14px;
+       }
+
+   </style>
+   
+ </head>
+ 
+ <body>
+     <div id = "header_main" >
+         <div id = "header">
+            <div>
+            <img src="http://i.imgur.com/fNPFPLR.png" alt="Главная" width="120" height="35">
+            </div>
+            
+            <div>
+                <img src="http://i.imgur.com/HKJ45LD.png" alt="Уведомления" width="120" height="35">
+            </div>
+            
+            <div>
+                <img src="http://i.imgur.com/eHmSgGa.png" alt="Сообщения" width="120" height="35">
+            </div>
+            
+            <div id = "tweet_icon">
+                <img src="http://i.imgur.com/m3T45Pk.png">
+            </div> 
+            
+            <div id = "findid">
+                <input class = "find" type="text" size="20" >
+            </div>
+            
+            <div id = "chirik">
+                <img src="http://i.imgur.com/tARry1Z.png" alt="Чик-чирик">
+            </div>
+                                    
+         </div>
+                             
+     </div>
+
+     <div id = "user_data">	
+     	
+     	<div>
+     		<img id = "BG_userdata" src="http://enjoycss.com/webshots/uy4_0.png" width="300" height="100">
+     		<!--
+     		<img id="user_avatar" src="http://www.autolada.ru/images/avatars/8/82/82360986147f2453545a5c.gif" width="64" height="64">
+     		 -->
+     	</div>
+
+     	<div id="user_profiles">
+     		<p class="font_LFname">FirstName LastName</p>
+     		<p class="font_LFname">#твой_личный_хештегныйник</p>
+     	</div>
+
+     	<div id = "box_cff">
+	     	<div class="inline_block chirik_following_followers">
+	     		<p class="font_chirik_following_followers">чирик</p>
+	     		<p class="amount_color">0</p>
+	     	</div>
+	     	
+	     	<div class="inline_block chirik_following_followers">
+	     		<p class="font_chirik_following_followers">читаемые</p>
+	     		<p class="amount_color">0</p>	
+	     	</div>
+
+	     	<div class="inline_block chirik_following_followers">
+	     		<p class="font_chirik_following_followers">читатели</p>
+	     		<p class="amount_color">0</p>
+	     	</div>
+     	</div>
+
+     	<!--<div id="amount_box">
+     		<div class="inline_block">
+     			<p>0</p>
+     		</div>
+
+     		<div class="inline_block">
+     			<p>0</p>
+     		</div>
+
+     		<div class="inline_block">
+     			<p>0</p>
+     		</div>-->
+     		
+     	</div>
+
+     </div>
+     
+ </body> 
+</html>
